@@ -23,6 +23,7 @@ img{
     
     
     
+    
 
     
 }
@@ -46,7 +47,7 @@ a{
     text-align: center;
 }
 .container{
-    height: 400px;
+    height: 450px;
     width: 360px;
  ;box-shadow: 0 0 10px gray;
  background-color: white;
@@ -56,25 +57,34 @@ a{
     margin-top: 150px;
     margin-bottom: 150px;
     
+} 
+.image{
+    border-radius: 6%;
     
+}    
+ .post{
+    object-fit: cover;
+ }   
     
+
+.b-border {
+    border: 6px solid grey;
+    width: 150px;
+    height: 320px;
+    border-radius: 10%;
     
-    
-}
-    .div-shadow {
-        width: 150px;
-        height: 320px;
-        border-radius: 10%;
-    
-    
-        background: #222;
-        color: #fff;
-        text-align: center;
-        border: 1px solid #fff;
-        box-shadow:0 0 20px lightblue;
-    } 
-.rar{
-    display: grid;
-}
+    animation: animBlinkBorder 5s linear infinite;
+  }
+  @keyframes animBlinkBorder {
+    0% {
+      border-color: yellow;
+    }
+    50% {
+      border-color: green;
+    }
+    100% {
+      border-color:red;
+    }
+  }
   
   
